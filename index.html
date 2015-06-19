@@ -11,14 +11,16 @@
 		<section>
 			<table class="table">
 				<tr>
-				<label>Search: <input ng-model="searchText"></label>
+				<!--Search Engine-->
+				<label>Search <input ng-model="searchText"></label>
+				
 				<!--toggle effect-->
 			    <th><a href="" ng-click="reverse=!reverse;order('title', reverse)">Transaction</a></th>  
 			    <th><a href="" ng-click="reverse=!reverse;order('cost', reverse)">Cost</a></th>
 			    <th><a href="" ng-click="reverse=!reverse;order('notes', reverse)">Notes</a></th>
 			  </tr>
 			  <tr ng-repeat="transaction in transactions | filter: searchText">
-			    <td>{{ transaction.title }}</td>
+                <td>{{ transaction.title }}</td>
 			    <td>{{ transaction.cost }}</td>
 			    <td>{{ transaction.notes }}</td>
 			  </tr>

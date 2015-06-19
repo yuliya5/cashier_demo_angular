@@ -4,7 +4,7 @@
 */
 section{
 	display: inline-block;
-	width: 40%;
+	width: 60%;
 	color: blue;
 }
 
@@ -14,4 +14,10 @@ body{
 
 .table{
 	color: yellow;
+	font-size: 20px;
+}
+
+label{
+	color: green;
+	font-size: 25px;
 }
